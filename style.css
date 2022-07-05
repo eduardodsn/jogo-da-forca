@@ -156,6 +156,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: display ;
 }
 
 #tronco_boneco_container {
@@ -186,7 +187,7 @@ body {
 }
 
 #braco_direito {
-    transform: rotate(150deg)
+    transform: rotate(150deg);   
 }
 
 #pernas {
@@ -205,6 +206,9 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    animation-name: olhos;
+    animation-duration: 2s ;
+    animation-iteration-count: infinite;
 }
 
 .olho {
@@ -328,4 +332,10 @@ body {
     #jogo_container {
         width: 100%;
     }
+}
+
+@keyframes olhos {
+    0% {margin-left: 10px}
+    50%{margin-left: -10px}
+    100% {margin-left: 10px}
 }
