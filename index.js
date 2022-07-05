@@ -43,8 +43,8 @@ atualizarTentativas(0)
 document.addEventListener('keypress', e => {
     let letraDigitada = formatarLetraPalavraDigitada(e.key);
     e.preventDefault();
-    
-    if(!isLetraValida(e.key)) {
+
+    if(!isLetraValida(letraDigitada)) {
         alert('Digite uma letra válida!');
         return
     }
