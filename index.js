@@ -126,12 +126,10 @@ function definirDica(classe) {
 function mostrarParteBoneco(tentativasRestantes) {
     let partesDisponiveis =  ['#cabeca_boneco', '#tronco_boneco', '#braco_esquerdo', '#braco_direito', '#perna_esquerda', '#perna_direita']
 
-    for(parte of partesDisponiveis) {
-        document.querySelector(parte).style.display = 'none'
-    }
-
+    // mostra partes de acordo com qtd de tentativas restantes
     partesDisponiveis.map((parte, id) => {
         if(6 - tentativasRestantes > id) {
+            //formatar estilos boneco
             if(parte === '#tronco_boneco') document.querySelector('#tronco_boneco_container').style.justifyContent='center';
             if(parte === '#braco_esquerdo') document.querySelector('#tronco_boneco_container').style.justifyContent='flex-start';
 
