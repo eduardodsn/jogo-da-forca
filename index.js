@@ -159,8 +159,7 @@ function isLetraJaTentada(letraDigitada) {
 
 function isLetraValida(letraDigitada) {
     let isValida = /([A-Za-z])$/.test(letraDigitada);
-
-    return isValida && letraDigitada !== 'Enter';
+    return isValida && letraDigitada !== 'enter';
 }
 
 function atualizarTentativas(qtdParaDiminuir) {
