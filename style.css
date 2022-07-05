@@ -319,3 +319,13 @@ body {
     display: flex;
     align-items: center;
 }
+
+@media screen and (max-width: 480px) {
+    #forca_container {
+        flex-direction: column;
+    }
+
+    #jogo_container {
+        width: 100%;
+    }
+}
