@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+    <title>Atividade Principal 1</title>
+</head>
+<body>
+    <div id="titulo_container">
+        <h1>Jogo da Forca</h1>
+    </div>
+    
+    <div id="forca_container">
+        <div id="forca">
+            <div id="corpo_forca_superior">
+                <div id="forca_vertical" class="corpo_forca detalhe_madeira">
+                    <div class="prego"></div>
+                </div>
+                <div id="forca_horizontal" class="corpo_forca detalhe_madeira"></div>
+                <div id="forca_diagonal" class="corpo_forca detalhe_madeira"></div>
+                <div id="forca_vertical_menor" class="corpo_forca detalhe_madeira">
+                    <div id="corda"></div>
+                    <div id="corda_pescoco"></div>
+                    <div id="corpo_boneco">
+                        <div id="membros_superiores">
+                            <div id="cabeca_boneco">
+                                <div id="olhos">
+                                    <div id="olho_esquerdo" class="olho"></div>
+                                    <div id="olho_direito" class="olho"></div>
+                                </div>
+                                <div id="nariz"></div>
+                                <div id="boca" class="boca_triste"></div>
+                            </div>
+                            <div id="tronco_boneco_container">
+                                <div id="braco_esquerdo"></div>
+                                <div id="tronco_boneco"></div>
+                                <div id="braco_direito"></div>
+                            </div>
+                        </div>
+                        <div id="membros_inferiores">
+                            <div id="pernas">
+                                <div class="perna_boneco" id="perna_esquerda"></div>
+                                <div class="perna_boneco" id="perna_direita"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="corpo_forca_inferior">
+                <div id="base_forca" class="corpo_forca detalhe_madeira"></div>
+            </div>
+        </div>
+
+        <div id="jogo_container">
+            <div id="infos_jogo" class="infos">
+                <h2>Dica: é um(uma) <span id="dica" class="destaque"></span></h2>
+                <h4>Digite uma letra</h4>
+            </div>
+            <div id="letras_container">
+                <span class="letras"></span>
+            </div>
+            <div id="infos_tentativas" class="infos">
+                <div id="letras_tentadas">
+                    <p>Letras tentadas: &nbsp;</p><span></span>
+                </div>
+                <div id="tentativas_restantes">
+                    <p>Tentativas restantes: &nbsp;</p><span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

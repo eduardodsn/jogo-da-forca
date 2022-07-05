@@ -1,0 +1,321 @@
+:root {
+    --white: #fff;
+    --background: #F2F3F5;
+    --gray-line: #DCDDE0;
+    --text: #666;
+    --text-highlight: #B3B9FF;
+    --title: #2E384D;
+    --dark: #1E1F2B;
+    --darkess: #1e1f2bf8;
+    --red: #E83F5B;
+    --green: #4CD62B;
+    --blue: #5965E0;
+    --blue-medium: #5964e04f;
+    --blue-light: #5964e01a;
+    --blue-dark: #4953B8;
+    --blue-twitter: #2AA9E0;
+    --ranking-user: #697af849;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #697af849;
+}
+
+#titulo_container {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #1e1f2bf8;
+    text-align: center;
+}
+
+
+/* Estilos forca */
+#forca_container {
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#forca_container, #forca, #corpo_forca_superior {
+    display: flex;
+}
+
+#forca {
+    width: 30%;
+    height: 425px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.detalhe_madeira {
+    border: 2px solid black;
+}
+
+#corpo_forca_superior {
+    position: relative;
+}
+
+#forca_vertical {
+    width: 25px;
+    height: 400px;
+}
+
+#forca_horizontal {
+    width: 150px;
+    height: 25px;
+}
+
+#forca_diagonal {
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    top: 10%;
+    transform: rotate(130deg);
+    z-index: -1;
+}
+
+#forca_vertical_menor {
+    position: relative;
+    width: 25px;
+    height: 40px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+#corpo_forca_inferior {
+    width: 245px;
+    height: 25px;
+}
+
+#base_forca {
+    width: 95px;
+    height: 25px;
+}
+
+.corpo_forca {
+    background-color: #422319;
+}
+
+#corda {
+    position: absolute;
+    top: 40px;
+    left: 40%;
+    width: 5px;
+    height: 82px;
+    background-color: red;
+    z-index: -1;
+}
+
+#corda_pescoco {
+    position: absolute;
+    top: 122px;
+    width: 28px;
+    height: 5px;
+    background-color: red;
+    z-index: 1;
+    border-radius: 40%;
+}
+
+
+
+/* Estilos boneco */
+#corpo_boneco {
+    width: 300px;
+    height: 380px;
+    position: absolute;
+    left: -137px;
+    top: 70px;
+}
+
+#membros_superiores, #membros_inferiores {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#membros_superiores {
+    width: 100%;
+    height: 48%;
+}
+
+#membros_inferiores {
+    height: 45%;
+    justify-content: flex-start;
+}
+
+#cabeca_boneco {
+    width: 48px;
+    height: 55px;
+    border-radius: 45%;
+    background-color: var(--title);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tronco_boneco_container {
+    width: 140px;
+    height: 130px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+#tronco_boneco {
+    width: 90px;
+    height: 100%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    background-color: var(--title);
+}
+
+#braco_esquerdo, #braco_direito {
+    width: 25px;
+    height: 80%;
+    background-color: var(--title);
+    border-radius: 10%;
+}
+
+#braco_esquerdo {
+    transform: rotate(30deg)
+}
+
+#braco_direito {
+    transform: rotate(150deg)
+}
+
+#pernas {
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.perna_boneco {
+    width: 33px;
+    height: 120px;
+    background-color: var(--title);
+}
+
+#olhos {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.olho {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+#nariz {
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+#boca {
+    margin-top: 5px;
+    width: 20px;
+    top: 70%;
+}
+
+.boca_normal {
+    width: 10px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.boca_triste {
+    width: 10px;
+    height: 7px;
+    background-color: #fff;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+/* Estilos jogo */
+#jogo_container {
+    width: 70%;
+    height: 425px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#letras_container {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+#letra_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 5%;
+    height: 80%;
+}
+
+.letras {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #1e1f2bf8;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.traco {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+}
+
+.infos {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    color: #1e1f2bf8;
+    text-align: center;
+}
+
+#infos_jogo h4 {
+    color: var(--blue-dark)
+}
+
+.destaque {
+    color: var(--blue) !important;
+}
+
+#infos_tentativas {
+    display: flex;
+    align-items: center;
+    color: var(--title);
+}
+
+#infos_tentativas span {
+    color: red;
+}
+
+#infos_tentativas {
+    display: flex;
+    flex-direction: column;
+}
+
+#letras_tentadas, #tentativas_restantes {
+    display: flex;
+    align-items: center;
+}
